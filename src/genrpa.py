@@ -5,8 +5,8 @@ import re
 from multiprocessing import Process, Queue, cpu_count
 
 from PIL import Image
-from reverse import from_string
-from funcs import build_expr
+from .reverse import from_string
+from .funcs import build_expr
 
 
 def simple_hash(input_string, desired_length=25):

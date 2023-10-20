@@ -16,7 +16,7 @@ This project is inspired by and based on [random-art](https://github.com/j2kun/r
 2. Run the image generator using:
 
 ```bash
-python -m genimg.genimg [options]
+python -m src.genrpa [options]
 ```
 
 ## Options:
@@ -29,7 +29,7 @@ python -m genimg.genimg [options]
 To generate a single image from a provided expression file:
 
 ```bash
-python -m genimg.genimg -c 1 -f path_to_file_with_expressions.txt
+python -m src.genrpa -c 1 -f path_to_file_with_expressions.txt
 ```
 
 ## Contributing

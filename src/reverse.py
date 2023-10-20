@@ -1,4 +1,4 @@
-from funcs import Sin, Cos, Times, X, Y, PI
+from .funcs import Sin, Cos, Times, X, Y, PI
 
 
 def from_string(expression):
