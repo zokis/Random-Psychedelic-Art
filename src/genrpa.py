@@ -120,7 +120,7 @@ class ImageGenerator:
         """Save expression details to a file."""
         hash_name = simple_hash(f"({r_exp})_({g_exp})_({b_exp})")
         details_filename = os.path.join(dir_name, f"details_{hash_name}.txt")
-        with open(details_filename, "w") as file:
+        with open(details_filename, "w", encoding="utf-8") as file:
             file.write(f"r_exp: {r_exp}\n")
             file.write(f"g_exp: {g_exp}\n")
             file.write(f"b_exp: {b_exp}\n")
@@ -138,7 +138,7 @@ class ImageGenerator:
 
     def get_expressions_from_file(self, filename):
         """Retrieve expressions from a file."""
-        with open(filename, "r") as file:
+        with open(filename, "r", encoding="utf-8") as file:
             content = file.read()
             return {
                 color.upper(): from_string(expr)

@@ -26,7 +26,7 @@ class UnaryOperation(BaseExpression):
         self.arg = build_expr(arg * arg) if new else arg
     
     def eval(self, x, y):
-        super().eval(x, y)
+        super().eval(None, None)
 
 
 class X(BaseExpression):
